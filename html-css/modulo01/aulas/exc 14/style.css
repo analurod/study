@@ -1,0 +1,20 @@
+@charset "UTF-8"; /* Isso é uma regra que criamos para compatibilidade de acentos, não pe obrigatório */
+
+body{
+    background-color: rgb(150, 222, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    color:rgb(238, 255, 0);
+    background-color: black;
+}
+
+h3{
+    color: rgb(11, 0, 107);
+}

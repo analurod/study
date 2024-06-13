@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <hr>
+
+    <h2>Listas Ordenadas</h2>
+    <p>Utilizamos a tag &lt;ol&gt;</p>
+    <ol type="1" start="1">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <p>Podemos personalizar a lista com "type" e "start" dentro da tag &lt;ol&gt;</p>
+
+    <h2>Listas Não Ordenadas</h2>
+    <p>Utilizamos a tag &lt;ul&gt;</p>
+    <ul type="square">
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Sabão</li>
+    </ul>
+
+    <p>Podemos personalizar a lista com "type" dentro da tag &lt;ul&gt;</p>
+
+    <h2>Listas Mistas</h2>
+    <p>Podemos utilizar listas dentro de listas. Bastante utilizado para criar Menus.</p>
+
+    <h3>Ordenada dentro de Ordenada</h3>
+    <ol>
+        <li>Exemplo 1</li>
+        <ol type="a">
+            <li>Olá</li>
+        </ol>
+        <li>Exemplo 2</li>
+        <ol type="a" start="2">
+            <li>Mundo</li>
+            <li>!</li>
+        </ol>
+    </ol>
+
+    <h3>Não Ordenada dentro de Ordenada</h3>
+    <ol>
+        <li>Exemplo 1</li>
+        <ul type="a">
+            <li>Olá</li>
+        </ul>
+        <li>Exemplo 2</li>
+        <ul type="a" start="2">
+            <li>Mundo</li>
+            <li>!</li>
+        </ul>
+    </ol>
+
+    <h3>Ordenada dentro de Não Ordenada</h3>
+    <ul>
+        <li>Exemplo 1</li>
+        <ol type="a">
+            <li>Olá</li>
+        </ol>
+        <li>Exemplo 2</li>
+        <ol type="a" start="2">
+            <li>Mundo</li>
+            <li>!</li>
+        </ol>
+    </ul>
+
+    <!--Podemos mudar algo em mais de uma tag por vez utilizando o Alt-->
+
+    <h2>Lista de Definição</h2>
+    <p>Como se fosse um dicionário. Utilizamos a tag &lt;dl&gt;,  &lt;dd&gt; ("Nome") e  &lt;dt&gt; ("Definição") </p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação para a criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de Marcação para a estilização de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de Programação para a criação de interatividade de site</dd>
+    </dl>
+
+</body>
+</html>

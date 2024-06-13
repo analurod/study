@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivos Multimídia</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <hr>
+
+    <h2>Resolução e Tamanhos</h2>
+    <p>O usúario vai acessar seu site em dispositivos diferentes (celular, tablet,computador) portanto é importante se atentar a resolução e tamanho da imagem em diferentes dispositivos.</p>
+
+    <p>Tente abrir este site em vários dispositivos diferentes ou aumente e diminua o tamanho do navegador. Para adicionar a imagem dinâmica ao site utilizamos o código abaixo:</p>
+
+    <pre>
+        <code>
+            &lt;picture&gt;
+                &lt;source media="(max-width: 780px)" srcset="imagens/pequena.png" type="image/png"&gt;
+                &lt;source media="(max-width: 1080px)" srcset="imagens/media.png" type="image/png"&gt;
+                &lt;img src="imagens/grande.png" alt="Imagem fléxivel"&gt;
+            &lt;/picture&gt;
+        </code>
+    </pre>
+
+
+
+    <picture>
+        <source media="(max-width: 780px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1080px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem fléxivel">
+    </picture>
+
+    <!-- A ordem da imagem no picture importa! -->
+
+    <p>Para que a imagem se adapte ao tamanho da tela usamos a tag &lt;picture&gt; e &lt;source&gt;, assim podemos definir a partir de qual tamanho devemos exibir qual resolução de imagem.</p>
+
+    <h1>Áudio</h1>
+    <hr>
+
+    <!-- MP3 WAV OGG - Formatos Compatíveis-->
+
+    <p>Podemos colocar áudios em nossos sites apenas utilizando HTML5. São compatíveis os formatos MP3, WAV e OGG, é bom termos o arquivo em diferentes formatos para melhora a experiÊncia do usuário. Lembrando os áudios também tem direitos autorais.</p>
+
+
+    <h2>Formas de Adicionar Áudio</h2>
+
+    <p>No primeiro caso utilizamos apenas a tag &lt;audio&gt; para adicionar o áudio a página e inicar a reprodução automática do mesmo, como mostra abaixo:</p>
+
+    <pre>
+        <code>
+            &lt;audio src="midias/happy-mistake.mp3" controls autoplay&gt;&lt;/audio&gt;
+        </code>
+    </pre>
+
+    <audio src="midias/happy-mistake.mp3" controls autoplay></audio>
+
+    <p>Já nesse segundo caso, utilizamos a tag &lt;audio&gt; e a tag &lt;source:src&gt;, como mostrado abaixo:</p>
+
+    <pre>
+        <code>
+            &lt;audio preload="metadata" controls autoplay&gt;
+                &lt;source src="midias/guanacast-33.mp3" type="audio/mpeg"&gt;
+            &lt;/audio&gt;
+        </code>
+    </pre>
+
+    <audio preload="metadata" controls autoplay>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/guanacast-33.mp3">Clique aqui</a>para baixar o arquivo MP3</p> <!-- Alternativa -->
+    </audio>
+
+    <p>A primeira maneira é a mais simples porém mais limitada em questão de formatos, então para maior compatibilidade utilizamos a segunda forma.</p>
+
+    <h2>Parâmetros adicionais nas Tags &lt;audio&gt;</h2>
+
+    <h3>Controls</h3>
+    <p>O "controls" dentro da tag &lt;audio&gt; serve para que possamos ver essa barra de controle do áudio.</p>
+
+    <h3>Autoplay</h3>
+    <p>O "autoplay" dentro da tag &lt;audio&gt; serve para iniciar automaticamente o áudio.</p>
+
+    <h3>Preload</h3>
+    <p>Não colocar nada na tag &lt;audio&gt; ou colocar preload auto faz com que o carregamento do site só seja considerado completo assim que o site terminar de carregar o áudio todo, é perigoso para arquivos grandes.</p>
+    <p>Com o preload metadata vai ser carregado alguns dados só.</p>
+    <p>Já com preload none só vai ser carregado quando o usuário apertar o play.</p>
+
+    <h3>Loop</h3>
+    <p>Para o áudio ser reproduzido novamente após chegar ao fim basta colocarmos o termo "loop" na tag &lt;audio&gt;</p>
+    
+
+    <h1>Vídeos</h1>
+    <hr>
+
+    <p>Os formatos compatíveis mais comuns são MP4, M4V, WebM e OGV, assim como no áudio é importante termos o vídeo em diferentes formatos para garantir uma experiência boa a maioria dos usuários.</p>
+
+    <p>Para converter os vídeos podemos utilizar o "HandBrake" de forma gratuita.</p>
+
+    <h2>Hospedagem Própria</h2>
+    <p>Abaixo temos vídeos hospedados no próprio servidor. Assim como aúdio podemos inserir da forma mais simples, mas como queremos maior compatibilidade iremos inserir da forma a seguir:</p>
+
+    <pre>
+        <code>
+            &lt;video width="500" poster="imagens/capa-video.png" controls autoplay loop&gt;
+                &lt;source src="midias/video-editado-web.mkv" type="video/webm"&gt;
+                &lt;source src="midias/video-editado-mp4.mp4" type="video/mp4"&gt;
+                &lt;source src="midias/video-editado-ogv.ogv" type="video/ogg"&gt;
+                &lt;p&gt;Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="midias/video.mp4">Clique aqui</a> para fazer o download.&lt;p&gt;
+            &lt;/video&gt;
+        </code>
+    </pre>
+
+    <p>O parâmetro poster adiciona uma capa ao vídeo.</p>
+
+    <video width="500" poster="imagens/capa-video.png" controls autoplay loop>
+        <source src="midias/video-editado-web.mkv" type="video/webm">
+        <source src="midias/video-editado-mp4.mp4" type="video/mp4">
+        <source src="midias/video-editado-ogv.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="midias/video.mp4">Clique aqui</a> para fazer o download.</p>
+    </video>
+
+    <h2>Hospedagem Externa</h2>
+
+    <h3>Inserindo vídeos do YouTube</h3>
+
+    <p>Para isso podemos ir no vídeo que queremos e clicar em 
+    "compartilhar", em seguida na opção "incorporar" e copiar o código que é gerado na própria plataforma. O resultado é mostrado logo abaixo:</p>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=FpVUVgyDRouecxQR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+    
+    <h3>Inserindo vídeos com Vimeo</h3>
+
+    <p>Outra alternativa é o Vimeo, a plataforma tem outras opções porém é uma plataforma paga.</p>
+
+
+</body>
+</html>
