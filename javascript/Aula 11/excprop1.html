@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background: rgb(84, 255, 84);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font: normal 20pt Comic Sans MS;
+        }
+        h1{
+            color: rgb(39, 0, 102);
+            font: normal 50pt Comic Sans MS;
+        }
+        input{
+            width: 175px;
+        }
+        input#botao{
+            width: 175px;
+            font: normal 20pt Comic Sans MS ;
+            color:black;
+            background-color: rgb(255, 251, 0);
+        }
+        div#res{
+            color:black;
+            background-color: rgb(255, 251, 0);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Nacionalidades!</strong></h1>
+    <p>Digite o páis que você nasceu: <input type="text" name="nac" id="nac"> </p>
+    <input type="button" value="Verificar!" id="botao" onclick="verifica()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        
+        function verifica(){
+            var br = document.getElementById('nac')
+            var res = document.getElementById('res')
+
+            if(br.value == 'BR' || br.value == 'Brasil' || br.value == 'Br'){ // O ".value" permite acessar e modificar o valor atual desses elementos de entrada (<input>, <select> e <textarea>)
+                res.innerHTML = `Você é <strong>BRASILEIRO!</strong>`
+            }
+            else{
+                res.innerHTML = `Você é <strong>GRINGO!</strong>`
+            }
+        }
+
+    </script>
+
+</body>
+</html>

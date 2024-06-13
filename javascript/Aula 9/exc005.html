@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+</head>
+<style>
+    body{
+        background-color: rgb(163, 107, 253);
+        color:white;
+        font: normal 20pt Arial;
+    }
+</style>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p> DOM é um modelo de objetos para documentos, ou seja, um conjunto de documentos dentro do navegador que vai dar acesso aos componentes internos do seu website</p>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1] //MARCA
+        p1.style.color = 'pink' // muda a cor do elemento selecionado acima
+
+        var d = window.document.getElementById('msg')
+        //d.innerText = 'Estou aguardando ...' //altera o texto do selecionado com id
+
+        var j = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+
+        /* No querySelect usamos # para selecionar id e . para selecionar class */
+
+        /* getElementsByTagName() -- MARCA
+        getElementById()  -- ID
+        getElementsByName() -- NOME
+        getElementsByClassName -- CLASSE
+        querySelector() -- SELETOR
+        querySelectorAll() -- SELETOR
+        */
+
+    </script>
+
+  
+
+</body>
+</html>
+

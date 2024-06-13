@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        /* Esse metodo dispara pelo JS o exemplo 006 dispara pelo HTML */
+
+        div#area {
+            font: normal 22pt Arial;
+            background: rgb(0, 0, 0);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area">
+        <strong>Interaja...</strong>
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = 'Oh! Clicou!'
+            a.style.color = 'black'
+            a.style.background = 'yellow'
+        }
+
+        function entrar(){
+            a.innerText = 'Uhul! Entrou!'
+            a.style.color= 'black' 
+            a.style.background = 'green'
+        }
+
+        function sair(){
+            a.innerText = 'Ah não! Saiu!'
+            a.style.color = ' black'
+            a.style.background = 'red'
+        }
+
+
+
+
+
+        // Eventos DOM é tudo aquilo que possa acontecer com qualquer elemento, por exemplo, eventos de mouse.
+        // Função em Js é um conjunto de códigos que vão ser executadas apenas quando um evento ocorrer.
+    </script>
+    
+</body>
+</html>

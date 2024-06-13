@@ -1,0 +1,59 @@
+body{
+    background-image: linear-gradient(to right, rgb(143, 163, 253), rgb(248, 167, 198));
+    font: normal 15t Zapf-Chancery;
+    color: rgb(0, 0, 0);
+}
+
+header{
+    text-align: center;
+    font: normal 15pt Roboto;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.692);
+}
+
+section{
+    background: white;
+    margin: auto; /* centraliza a div */
+    border-radius: 10px;
+    padding: 15pt;
+    width: 500px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+#bot{
+    background: rgb(173, 0, 38);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+    width: 120px;
+    font: normal 12pt Zapf-Chancery;
+    color: rgb(255, 255, 255);
+}
+
+div{
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+    font: normal 18pt Roboto;
+    color: rgb(56, 0, 78);
+    font-style: italic;
+}
+
+.botao{
+    width: 120px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    font: normal 15pt Roboto;
+}
+
+#seltab{
+    font: normal 15pt Roboto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}

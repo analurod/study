@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando dois números!</title> <!-- Isso é um comentário em HTML-->
+</head>
+<style>
+    body{
+        background-color: rgb(169, 112, 223); /* CSS só aceita esse tipo de coment, serve para JS e mais d euma linha */
+        color: white;
+        font: normal 20pt Arial
+    }
+</style>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Esse é meu primeiro programa que soma dois números em JavaScript.</p>
+    <script>
+        var num1 = window.prompt('Digite um número: ')
+        num1 =Number(num1) // converte string em numero
+        var num2 = window.prompt('Digite outro número: ')
+        num2 =Number(num2) // converte string em numero
+        var soma = num1 + num2
+        window.alert(`A soma entre ${num1} e ${num2} é igual a ${soma}`)
+
+        // String(n) ou n.toString()  -> Serve para transformar número em string
+        // 'Estou aprendendo ${s}'    -> Substitui a concatenação2
+
+
+
+    </script>
+</body>
+</html>

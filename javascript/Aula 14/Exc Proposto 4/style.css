@@ -1,0 +1,48 @@
+body{
+    background-image: linear-gradient(to right, rgb(216, 122, 0), rgb(179, 11, 75));
+    font: normal 22pt Zapf-Chancery;
+    color: black;
+}
+
+header{
+    text-align: center;
+    font: normal 15pt Roboto;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.692);
+}
+
+section{
+    background: white;
+    margin: auto; /* centraliza a div */
+    border-radius: 10px;
+    padding: 15pt;
+    width: 500px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+#bot{
+    background: rgb(173, 0, 38);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+    width: 150px;
+    font: normal 22pt Zapf-Chancery;
+    color: rgb(255, 255, 255);
+}
+
+div{
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+    font: normal 18pt Roboto;
+    color: white;
+    font-style: italic;
+}
+
+.botao{
+    width: 120px;
+}

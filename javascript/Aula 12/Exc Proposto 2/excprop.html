@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idades</title>
+    <link rel="stylesheet" href="excprop.css">
+</head>
+<body>
+    <header>
+        <h1>Verifique sua idade!</h1>
+    </header>
+
+    <body>
+        <section>
+            <div>
+                <p>Ano de Nascimento:
+                    <input type="number" name="data" id="data" min="0">
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="fem" checked>
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="radsex" id="masc">
+                    <label for="masc">Masculino</label>
+                </p>
+                <P>
+                    <input id="bot" type="button" value="Verificar!" onclick="verifica()">
+                </P>
+            </div>
+                
+            <div id="res">
+                <p>Preencha os dados acima!</p>
+            </div>
+        </section>
+
+    </body>
+
+    <footer>
+        <p>&copy; AnaLu</p>
+    </footer>
+    
+    <script src="excprop.js"></script>
+</body>
+</html>
