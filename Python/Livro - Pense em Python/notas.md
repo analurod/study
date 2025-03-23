@@ -5,7 +5,7 @@ Este arquivo contém anotações e conceitos importantes aprendidos durante a le
 
 ## 📚 Sumário  
 
-- [Capítulo a - A Jornada do programa](#📌-Capítulo-1---a-jornada-do-programa)
+- [Capítulo 1 - A Jornada do programa](#📌-Capítulo-1---a-jornada-do-programa)
 - [Capítulo 2 - Variáveis, expressões e instruções](#📌-capítulo-2---variáveis-expressões-e-instruções)  
 - [Capítulo 3 - Funções](#📌-capítulo-3---funções)  
 - [Capítulo 4 - Estudo de caso: projeto de interface](#📌-capítulo-4---estudo-de-caso-projeto-de-interface)  
