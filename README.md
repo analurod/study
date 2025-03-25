@@ -8,4 +8,4 @@ Este repositório serve como um centralizador de aprendizado, reunindo exercíci
 - [HTML5 e CSS3](https://github.com/analurod/study/tree/main/html-css)
 - [JavaScript](https://github.com/analurod/study/tree/main/javascript)
 - [Power BI](https://github.com/analurod/study/tree/main/power-bi)
-- [Python](https://github.com/analurod/study/tree/main/python)
+- [Python](https://github.com/analurod/study/tree/main/Python)
