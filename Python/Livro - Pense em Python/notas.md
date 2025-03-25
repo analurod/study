@@ -30,14 +30,56 @@ Este arquivo contém anotações e conceitos importantes aprendidos durante a le
 ---
 
 ## 📌 Capítulo 1 - A Jornada do programa  
-🔹 Python é uma linguagem interpretada e de tipagem dinâmica.  
-🔹 Erros comuns ao iniciar:  
-   - `SyntaxError`: erro de sintaxe.  
-   - `NameError`: uso de variável não definida.  
-🔹 O comando `print()` exibe saída no console.  
-```python
-print("Olá, mundo!")
-```
+   🔹 Um **programa** é uma sequência de instruções que especifica como executar uma operação da computação.
+
+   🔹 A operação da computação pode ser:
+   - Algo matemático.
+   - Operação da computação simbolica, como a busca e substituição de textos em um documento.
+
+   🔹 Instruções básicas independente da linguagem: *entrada*, *saída*, *matemática*, *execução condicional* e *repetição*.
+
+   🔹 O comando `print()` exibe saída no console.  
+   ```python
+   print("Olá, mundo!") 
+
+   # Saída: Olá, mundo!
+   ```
+
+   🔹 Os **operadores matématicos** são simbolos especiais que representam operações de computação. 
+   ```python
+   40 + 2 # Representa adição
+   # Saída: 42
+
+   43 - 2 # Representa subtração
+   # Saída: 41
+
+   6 * 7 # Representa divisão
+   # Saída: 42
+
+   10 / 2 # Representa divisão real
+   # Saída: 5.0 (float)
+
+   6 ** 2 # Representa exponenciação
+   #Saída: 36
+   ```
+
+   🔹 Um **valor** é a coisa mais básica com as quais o programa trabalha. Esses valores pertencem a **tipos** diferentes. A função `type()` nos diz o tipo do valor.
+   ```python
+   type(2)
+   # Saída: class 'int'
+   # int -> números  inteiros
+
+   type(5.0)
+   # Saída: class 'float'
+   # float -> números de ponto flutuante
+
+   type('Hello, World!')
+   # Saída: class 'str'
+   # str -> string
+   ```
+   
+   🔹 Os erros de programação são chamados de **bugs** e o processo para achar esses erros é chamado de **depuração**
+
 
 ## 📌 Capítulo 2 - Variáveis, expressões e instruções
 
