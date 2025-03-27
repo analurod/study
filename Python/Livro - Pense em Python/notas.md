@@ -145,38 +145,133 @@ Este arquivo contém anotações e conceitos importantes aprendidos durante a le
 
 ## 📌 Capítulo 3 - Funções  
 
+   🔹 Uma **função** é uma sequencia nomeada de intruções que executa uma operação de computação. Ao definir a função você especifica o nome e a sequencia de intruções. Depois, pode "chamar" a função pelo nome. 
+
+   🔹O Python oferece funções que convertem valores de um tipo para o outro:
+
+   ```python
+   int(35.4) # Convertendo valor float para inteiro
+   >>> 35
+
+   float('34.55555') # Convertendo string para valor float
+   >>> 34.55555
+
+   str(32) # Convertendo inteiro para string
+   >>> '32'
+   ```
+
+   🔹 O Python tem um módulo matemático que oferece a maioria das funções matemáticas comuns: `math`
+
+   🔹 **Módulo** é um arquivo que contém uma coleção de funções relacionadas. Antes de usarmos as funções do módulo temos que importá-lo: `import math`. Essa instrução cria um **objeto de módulo** chamado *math*
+
+   🔹 **Notação de ponto** é uma forma de chamar as funções:
+   ```python
+   import math
+
+   # Encontra o seno de radianos
+   graus = 45
+   radianos = graus / 180.0 * math.pi
+   math.sin(radianos)
+   ```
+   
+   🔹 É possível acrescentar/criar novas funções:
+   ```python
+   def diga_oi(n):
+      print('Oii {n}!')
+
+   diga_oi('Samanta')
+
+   # Saída: Oii Samanta!
+   ```
+
+   🔹 A palavra `def` indica uma definição de função. Uma vez a função definida é possível usar ela dentro de outra função:
+
+   ```python
+   def diga_oi(nome):
+      print('Oii {n}!')
+
+   def cumprimento(nome):
+      diga_oi(nome)
+      print('Como vai?')
+
+   cumprimento('Roberta')
+
+   # Saída: Oii Roberta!
+   #        Como vai?
+   ```
+
+   🔹 Argumentos são os valores passados para uma função quando ela é chamada, enquanto parâmetros são as variáveis definidas na assinatura da função que recebem esses valores.
+
+---  
+
 ## 📌 Capítulo 4 - Estudo de caso: projeto de interface 
+
+---  
 
 ## 📌 Capítulo 5 - Condicionais e recursividade  
 
+---  
+
 ## 📌 Capítulo 6 - Funções com resultado
+
+---  
 
 ## 📌 Capítulo 7 - Iteração 
 
+---  
+
 ## 📌 Capítulo 8 - Strings  
+
+---  
 
 ## 📌 Capítulo 9 - Estudo de caso: jogos de palavras 
 
+---  
+
 ## 📌 Capítulo 10 - Listas
+
+---  
 
 ## 📌 Capítulo 11 - Dicionários
 
+---  
+
 ## 📌 Capítulo 12 - Tuplas
+
+---  
 
 ## 📌 Capítulo 13 - Estudo de caso: seleção de estrutura de dados
 
+---  
+
 ## 📌 Capítulo 14 - Arquivos
+
+---  
 
 ## 📌 Capítulo 15 - Classes e objetos
 
+---  
+
 ## 📌 Capítulo 16 - Classes e funções
+
+---  
 
 ## 📌 Capítulo 17 - Classes e métodos
 
+---  
+
 ## 📌 Capítulo 18 - Herança
+
+---  
 
 ## 📌 Capítulo 19 - Extra
 
+---  
+
 ## 📌 Capítulo 20 - Depuração
 
+---  
+
 ## 📌 Capítulo 21 - Análise de algoritmos
+
+---  
