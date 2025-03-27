@@ -205,6 +205,7 @@ Este arquivo contém anotações e conceitos importantes aprendidos durante a le
 ---  
 
 ## 📌 Capítulo 4 - Estudo de caso: projeto de interface 
+   🔹 Uso do módulo turtle: - [Testando Turtle](https://github.com/analurod/study/blob/main/Python/Livro%20-%20Pense%20em%20Python/Outros/testando_turtle.py)
 
 ---  
 
