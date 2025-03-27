@@ -78,8 +78,58 @@ do_twice(print_twice, 'spam')
 
 
 def do_four(f, n):
-    for i in range(2):
-        f(n)
+    do_twice(f, n)
+    do_twice(f, n)
 
 
-do_four(print_twice, 'teste')
+do_four(print, 'teste')
+
+
+"""Exercício 3.3
+1. Escreva uma função que desenhe a grade como a seguinte:
++----+----+
+|    |    |
+|    |    |
+|    |    |
+|    |    |
++----+----+
+|    |    |
+|    |    |
+|    |    |
+|    |    |
++----+----+ 
+
+2. Escreva uma função que desenhe uma grade semelhante com 4 linhas e 4 colunas
+"""
+
+# 1
+
+
+def print_des(f, n):
+    print('+', '-'*4, '+', '-'*4, '+')
+    f(print, n)
+    print('+', '-'*4, '+', '-'*4, '+')
+    f(print, n)
+    print('+', '-'*4, '+', '-'*4, '+')
+
+
+linha = '| ' + ' '*4 + ' |' + ' '*4 + ' |'
+print_des(do_four, linha)
+
+# 2
+
+
+def printdois(f, n):
+    print('+', '-'*4, '+', '-'*4, '+', '-'*4, '+', '-'*4, '+')
+    f(print, n)
+    print('+', '-'*4, '+', '-'*4, '+', '-'*4, '+', '-'*4, '+')
+    f(print, n)
+    print('+', '-'*4, '+', '-'*4, '+', '-'*4, '+', '-'*4, '+')
+    f(print, n)
+    print('+', '-'*4, '+', '-'*4, '+', '-'*4, '+', '-'*4, '+')
+    f(print, n)
+    print('+', '-'*4, '+', '-'*4, '+', '-'*4, '+', '-'*4, '+')
+
+
+linha_d = linha + ' '*4 + ' |' + ' '*4 + ' |'
+printdois(do_four, linha_d)
