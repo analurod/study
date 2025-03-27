@@ -28,7 +28,6 @@ Este arquivo contém anotações e conceitos importantes aprendidos durante a le
 - [Capítulo 21 - Análise de algoritmos](#-capítulo-21---análise-de-algoritmos)  
 
 ---
-
 ## 📌 Capítulo 1 - A Jornada do programa  
    🔹 Um **programa** é uma sequência de instruções que especifica como executar uma operação da computação.
 
@@ -80,8 +79,69 @@ Este arquivo contém anotações e conceitos importantes aprendidos durante a le
    
    🔹 Os erros de programação são chamados de **bugs** e o processo para achar esses erros é chamado de **depuração**
 
+---
 
 ## 📌 Capítulo 2 - Variáveis, expressões e instruções
+   🔹 Uma **variável** é um nome que se refere a um valor.
+   🔹 Uma **instrução de atribuição** cria uma nova varia´vel e dá valor a ela:
+   ```python
+   mensagem = 'And now for something completely different' # String
+   num = 17 # Int
+   pi_aprox = 3.141592653589793 # Float
+   ```
+
+   🔹 Uma forma comum de representar variáveis por rescrito é colocar o nome com uma flecha apontando para o seu valor, isso é chamado de **diagram de estado**:
+   ```
+   mensagem ---> 'And now for something completely different'
+    
+   num ---> 17
+      
+   pi_aprox ---> 3.141592653589793
+   ```
+
+   🔹Se você der um nome "ilegal" para uma variável vai receber um erro de sintaxe
+
+   ```python
+   1teste = 'Oi!' # Começa com número 
+   >>> SyntaxError: invalid syntax
+
+   more@ = 10000 # Caracter especial (@)
+   >>> SyntaxError: invalid syntax
+
+   class = 'Classe' # Palavra-chave da linguagem
+   >>> SyntaxError: invalid syntax
+   ```
+
+   🔹Uma **expressão** é uma combinação de valores, variáveis e operadores.
+
+   🔹Uma **instrução** é uma unidade de código que tem um efeito, como criar uma variável e exibir um valor:
+
+   ```python
+   n = 17
+   print(n)
+
+   # Saída: 17
+   ```
+
+   🔹 Em geral não é possível realizar operações matemáticas com strings, com exeção dos operadores + e *:
+
+   ```python
+   # Função de concatenação
+   text = 'He' + 'llo' 
+   print(text)
+   # Saída: Hello
+
+   # Função de repetição
+   print(texto*3)
+   # Saída: HelloHelloHello
+   ```
+
+   🔹Há três tipos de erros que podem ocorrer em um programa:
+   - Erro de sintaxe.
+   - Erro de tempo de execução.
+   - Erro semântico.
+
+---
 
 ## 📌 Capítulo 3 - Funções  
 
