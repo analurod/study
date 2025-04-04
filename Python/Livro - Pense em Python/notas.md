@@ -211,6 +211,110 @@ Este arquivo contém anotações e conceitos importantes aprendidos durante a le
 
 ## 📌 Capítulo 5 - Condicionais e recursividade  
 
+   ### Condicioniais
+   🔹 Uma **Expressão Booleana** pode ser verdadeira ou falsa.
+   ```python
+      5 == 5
+      #Saída: True (bool)
+
+      5 == 6
+      # Saída: False (bool)
+   ```
+
+   🔹 **Operadores relacionais** comparam operandos e produz uma saída Booleana (`True` ou `False`)
+   ```python
+      x != y # x não é igual a y
+      x == y # x é igual a y 
+      x > y # x é maior que y
+      x >= y # x é maior ou igual a y
+      x < y # x é menor que y
+      x <= y # x é menor ou igual a y
+   ```
+
+   🔹 No Python há três **operadores lógicos**: `and`, `or` e `not`
+
+   🔹 Quase sempre precisamos da capacidade de verificar condições e mudar o comportamento do programa e para isso utilizamos o `ìf` que segue de acordo com as **intruções condicionais**
+   ```python
+      #Verifica se um número x é positivo
+      if x > 0:
+         print('x é positivo.')
+
+      if (x%2)==0:
+         print('x é par.')
+   ```
+
+
+   🔹 Uma outra forma da instrução `if` é a **execução alternativa** na qual há duas e a condição determina qual será executada.
+   ```python
+      if x > 0:
+         print('x é positivo.')
+      else:
+         print('x é negativo.')
+
+
+      if (x%2)==0:
+         print('x é par.')
+      else:
+         print('x é impar.')
+   ```
+
+   🔹 Há também casos em que existem mais de duas possibilidades e podemos utilizar **condições encadeadas**.
+   ```python
+      if x > y:
+         print('x maior que y.')
+      elif x < y:
+         print('x menor que y.')
+      else:
+         print('x igual a y.')
+   ```
+
+   🔹 Uma condição também pode ser aninhada dentro de outra, mas podem ser dificeis de ler rapidamente então é uma boa ideia evita-lás.
+   ```python
+      # Condições aninhadas
+      if x > 0:
+         if x < 10:
+            print('x é um número positivo de apenas um digito.')
+
+      # Condicional com operadores lógicos
+      if x > 0 and x < 10:
+         print('x é um número positivo de apenas um digito.')
+
+      # Ou
+      if 0 < x < 10:
+         print('x é um número positivo de apenas um digito.')
+
+   ```
+   
+   ### Recursividade
+   🔹 Além de chamar outras funções, elas podem chamar a si mesma.
+   ```python
+      def contagem_regressiva(n):
+         if n == 0:
+            return
+         else:
+            print(n)
+            contagem(n-1)
+   ```
+
+   🔹 Os diagramas de pilha podem ser usados para ajudar na interpretação de uma função recursiva.
+
+   ### Extra
+
+   🔹Operador pelo piso (`//`) e módulo (`%`)
+   ```python
+      45 // 2 # Divide dois números e arredonda para o inteiro abaixo mais próximo
+      # Saída: 22
+
+      45 % 2 # Divide dois números e devolve o resto
+      # Saída: 1
+   ```
+
+   🔹 O Python tem a função `input()` que para a execução do programa e espera que o usuário digite algo para retornar
+   ```python
+      idade = input() # Recebe a entrada
+      nome = input('Digite seu nome: ') # Exibe a instrução e recebe a entrada
+   ```
+
 ---  
 
 ## 📌 Capítulo 6 - Funções com resultado
