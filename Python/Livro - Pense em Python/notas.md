@@ -319,6 +319,58 @@ Este arquivo contém anotações e conceitos importantes aprendidos durante a le
 
 ## 📌 Capítulo 6 - Funções com resultado
 
+   ### Valores de Retorno
+   🔹Usaremos o **return** para retornar os resultados das funções:
+   ```python
+   # Recebe o raio e retorna a área
+   import math
+
+   def area(raio):
+      a = math.pi * raio**2
+      return a
+
+   # Forma mais concisa
+   def area(raio):
+      return math.pi * raio**2
+   ```
+
+   🔹 As vezes, é útil usar intruções de retorno em cada condicional:
+   ```python
+   # Recebe o raio e retorna a área
+   def valor_absoluto(x):
+      if x < 0:
+         return -x
+      else:
+         return x
+   ```
+
+   🔹Logo que a instrução de retorno é executada, a função termina sem executar nenhuma outra instrução subsequente.
+
+   🔹 As funçõs podem retornar booleans, o que pode ser conveniente em funções com testes complicados
+   ```python
+   # Verifica se é divisivel
+   def e_divisivel(a, b):
+      if a % b == 0:
+         return True
+      else:
+         return False
+
+   # Forma mais concisa
+      def e_divisivel(a, b):
+         return a % b == 0
+   ```
+
+   ### Desenvolvimento incremental
+   🔹 O objetivo do desenvolvimento incremental é evitar longas sessões de depuração, acrescentando e testando pequenas partes do código. Os principais aspectos são:
+
+   1. Começar um programa que funcione e fazer pequenas alterações incrementais. Se houver um erro em qualquer ponto, será bem mais fácil encontrar
+
+   2. Usar variáveis para guardar valores intermediários, assim pode exibir e verificar
+
+   3. Uma vez que o programa esteja funcionando pode remover scaffolding (print usados para depuração) ou consolidar várias instruções em expressões compostas.
+
+
+
 ---  
 
 ## 📌 Capítulo 7 - Iteração 
