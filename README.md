@@ -1,17 +1,36 @@
-<h1 align="center">📚 Resumos e Exercícios 📚</h1>
+# 📚 Data Learning Journey
+<br>[English Version Here!](/englishversion.md)<br>
+Este repositório documenta minha evolução prática em Análise de Dados, reunindo estudos, exercícios e experimentos com foco em Python, SQL, Github, Estatística e ferramentas de BI.
 
-## 📌 Visão Geral  
-Este repositório foi criado para centralizar e organizar meu aprendizado, reunindo exercícios, resumos e desafios resolvidos em cursos, leituras e estudos autônomos.  
-O objetivo é facilitar a revisão e prática contínua dos conteúdos abordados.
+## 🎯 Objetivo
 
-## 📂 Conteúdos  
- 🔹 **[Git e GitHub](https://github.com/analurod/study/tree/main/git-github)**  
- 🔹 **[HTML5 e CSS3](https://github.com/analurod/study/tree/main/html-css)**  
- 🔹 **[JavaScript](https://github.com/analurod/study/tree/main/javascript)**  
- 🔹 **[Power BI](https://github.com/analurod/study/tree/main/power-bi)**  
- 🔹 **[Python](https://github.com/analurod/study/tree/main/Python)**  
- 🔹 **[Dados](https://github.com/analurod/study/tree/main/dados-udemy)**  
- 🔹 **[React](https://github.com/analurod/study/tree/main/react)**  
+Desenvolver uma base sólida em dados através da prática contínua, explorando desde conceitos fundamentais até aplicações mais próximas de problemas reais.
 
+## 🧠 Conteúdos
 
-Sinta-se à vontade para explorar e contribuir! 🚀  
+### 🐍 Python
+- Manipulação de dados com Pandas
+- Limpeza e tratamento de dados
+- Exercícios práticos
+
+### 🗄️ SQL
+- Consultas básicas e avançadas
+- Joins, agregações e subqueries
+- Resolução de desafios
+
+### 📊 Estatística
+- Probabilidade
+- Distribuições
+- Conceitos aplicados à análise de dados
+
+### 📈 Power BI
+- Criação de dashboards
+- Visualização de dados
+
+### 🧪 Mini Projetos
+- Pequenas análises exploratórias
+- Testes com datasets reais
+
+## 🚀 Em desenvolvimento
+
+Este repositório está em constante evolução conforme avanço nos estudos e aplico novos conceitos.
